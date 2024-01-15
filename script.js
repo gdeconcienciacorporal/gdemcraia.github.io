@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     actualizarDiasRestantes();
     setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
-     
-    // Datos para el gráfico de líneas
+     // Datos para el gráfico de líneas
   const dataLine1 = {
-    labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5', 'Día 6'], // Etiquetas de los días
+    labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
       label: 'Km recorridos en column-container-1',
-      data: [11, 17, 4.7, 16, 10, 25], // Datos de los km recorridos en cada día
+      data: [10, 15, 12, 18], // Datos de los km recorridos en cada día
       borderColor: 'rgba(75, 192, 192, 1)',
       fill: false,
       tension: 0.1
@@ -15,15 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const dataLine2 = {
-    labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5', 'Dia 6'], // Etiquetas de los días
+    labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
       label: 'Km recorridos en column-container-2',
-      data: [13, 19, 17, 9.4, 14, 20], // Datos de los km recorridos en cada día
+      data: [15, 12, 18, 20], // Datos de los km recorridos en cada día
       borderColor: 'rgba(153, 102, 255, 1)',
       fill: false,
       tension: 0.1
     }]
-    
   };
 
   // Configuración del gráfico de líneas
@@ -59,27 +57,28 @@ document.addEventListener("DOMContentLoaded", function () {
          .addToUi();
    }
    
+
 function actualizarDiasRestantes() {
     // Obtener el título que contiene la fecha objetivo
-  const pageTitle =  document.getElementById('pageTitle').innerText;
+    const pageTitle =  document.getElementById('pageTitle').innerText;
       
     // Extraer la fecha de la cadena del título
-  const objetivoDate = new Date(pageTitle.split(": ")[1]);
+    const objetivoDate = new Date(pageTitle.split(": ")[1]);
   
     // Obtener la fecha actual
-  const currentDate = new Date();
+    const currentDate = new Date();
   
     // Calcular la diferencia en milisegundos entre las dos fechas
-  const timeDiff = objetivoDate - currentDate;
+    const timeDiff = objetivoDate - currentDate;
   
     // Calcular la cantidad de días
-  const daysDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+    const daysDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
   
     // Mostrar el resultado
-  const resultElement = document.getElementById('result');
-  resultElement.textContent = `Faltan ${daysDiff} días para llegar a la carrera.`;
-  console.log("actualizarDiasRestantes function called");
-  }
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = 'Faltan ${daysDiff} días para llegar a la carrera.';
+    console.log("actualizarDiasRestantes function called");
+    }
 
     // Crear dos nuevas instancias de HTMLVideoElement para cada sección
     let Semana_1_video_1 = document.createElement("video");
@@ -117,4 +116,5 @@ function actualizarDiasRestantes() {
     document.getElementById("Semana 2").appendChild(video4);
 
 });
+
 
