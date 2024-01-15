@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDE - Trail Running</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gde1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+ <div class="container">
+        <div class="main-container">
+            <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
+            <h2>Alumno: Matias Craia</h2>
+        </div>
+            <h2>Objetivo mensual: Mejorar la cadencia</h2>
+            <h2>Fase: Adquisición</h2>
+            <h2 id ="pageTitle">Fecha proxima carrera: 16/02/2024 </h2> 
+            <!--<p id="result"></p>
+            <p>Indicaciones previas:  </p>-->
+        
+        <div class="sub-container">
+            <h4>SEMANA 1</h4>
+            <p>Objetivo semanal: Mejorar los parciales de subida</p>
+            <div>
+                <h2>Entrada en calor </h2>   <p> 4 vueltas x 12 repeticiones </p>
+                <video width="640" height="360" controls>
+                    <source src="Video1.mp4" type="video/mp4">
+                </video>
+                <video width="640" height="360" controls>
+                    <source src="Video2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div><h2> Running </h2>
+        </div>
+
+        <div class="column-container 1">           
+            <div class="column">
+                <h3>Dia 1</h3>
+                <p>Lunes: 11 km Trail Paque de Montaña.</p>
+                <p>  -1 km arrancando rapido por senderos bajos.</p>
+                <p>  -4 km progresiciones de 50mts. </p>
+                <p>  -1 km lloron por adelante subiendo fuerte. </p>
+                <p>  -2 km llorones 1 por filo sur y 1 por calle los dos bajando rapido.</p>
+                <p>  -1 km 7 colinas subida fuerte -bajada freno cada 30mts .</p>
+                <p>  - Completamos el trabajo con buenas sensaciones .</p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>        
+                <p>Martes mañana: 5 km Calle subida fuerte desde la bastilla hasta la Iglesia baja suave.</p>
+                <p>Martes tarde: 12 km Zona de Arco. </p>
+                <p>  -2 km de mayor a menor.</p>
+                <p>  -4 km subiendo 40" bajando 15". </p>
+                <p>  -4 km sensaciones incomodas en subida al limite. </p>
+                <p>  -2 km sensaciones incomodas en subida al limite.</p>
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>
+                <p> Miercoles: 4.7 km Series Triangulares: </p>
+                <p>  - 6x150m subida fuerte x Siete Colinas arriba descansamos 1':30". </p>
+                <p>  - 6x150m bajada fuerte x Siete colinas abajo descansamos 2'.</p>
+                <p>  - 6x150m pasada llano dique fria descansamos 30'' entre pasadas.</p>  
+                <p>  - 2 km de menos a mas por cerros bajos.</p>  
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Jueves: 16 km Gateado por Camino del Mal Paso. </p>
+                <p>  - 1 km fuerte. </p>
+                <p>  - 2 km de mayor a menor. </p>
+                <p>  - 5 km 40" agil 40" treking exigido toque donde toque. </p>
+                <p>  - 8 km bajada lo mas conciente y firme posible. </p>
+            </div>
+                <div class="column">
+                <h3>Dia 5</h3>        
+                <p> Viernes: 10 km Pasada en Calle</p>
+                <p>  - 6x300m subida fuerte bajada controlada calle del cricyt. </p>
+                <p>  - 6x200m bajada fuerte subida controlada calle del cricyt. </p>
+                <p>  - 2x1000m subimos fuerte descansamos 1' bajamos fuertisimo. </p>
+                <p>  - 2 km agiles por calle libre. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 6</h3>        
+                <p> Sábado: 25 km Zona del Arco 1900+.</p>
+                <p>  - 2 km fuerte. </p>
+                <p>  - 3 km 30" agiles x 30" suave. </p>
+                <p>  - 4 km trekking exigido pasos fuerte. </p>
+                <p>  - 1 km trabajamos tecnica de cadencia firme en subida</p>
+                <p>  - completamos con  buenas sensaciones. </p>
+            </div>
+        </div>
+
+        <div class="small-paragraph-container">
+            <p> Método de recuperación- duchas frías de 1':30"  post entrenos después del día martes y jueves - Botas post entreno dia viernes </p>     
+        </div>
+        
+        <div id="column-container 1">
+        <canvas id="myChart-line-1"></canvas>
+        </div>
+               
+        <div class="sub-container">
+            <h4>SEMANA 2</h4>
+            <p>Objetivo semanal: Mejora de la cadencia en subida.</p>
+            <div>
+                <h2>Entrada en calor </h2>   <p> 3 vueltas x 13 repeticiones </p>
+                <video width="640" height="360" controls>
+                    <source src="Video3.mp4" type="video/mp4">
+                </video>
+                <video width="640" height="360" controls>
+                    <source src="Video4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div><h2> Running </h2>
+        </div>
+
+        <div class="column-container 2">
+            <div class="column">
+                <h3>Dia 1</h3>
+                <p>Lunes: 13 km Parque de Montañan -Frias.</p>
+                <p>  - 2 km de menor a mayor.</p>
+                <p>  - 3 km ágiles. </p>
+                <p>  - 5 km haciendo 45" ágiles 45"suaves. </p>
+                <p>  - 3 km fuertes.</p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>
+                <p>Martes mañana: 4 km Calle  2km agiles -2km fuertisimooo.</p>
+                <p>Martes tarde: 15 km Parque de montaña. </p>
+                <p>  - 2 km llorones subida por grieta bajada por adelante.</p>
+                <p>  - 2 km llorones subida por calle bajada por filo sur. </p>
+                <p>  - 1 km gloria subida por pinos bajada x calle. </p>
+                <p>  - 1 km 7 colinas subida fuerte con frenos cada 20 mts.</p>
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Miércoles: 17 km Zona de Arco. </p>
+                <p> - 2 km de menor a mayor </p>
+                <p> - bajada por rio seco hasta la entrada </p>
+                <p> - subida por filo hasta antenas lo mas fuerte posible.</p>
+                <p> - 7 km haciendo 3' fuertes x 3' suave. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 4</h3>        
+                <p> Jueves: 9.4 km Series Triangulares Parque de montaña.</p>
+                <p>  - 6x300m subida fuerte x Siete Colinas arriba descansamos 1':30". </p>
+                <p>  - 6x300m bajada fuerte x Siete colinas abajo descansamos 2'</p>
+                <p>  - 6x300m pasada llano dique Frias, descansamos 30'' entre pasada</p>
+                <p>  - 4 km: 2km agil 2km fuertes</p>
+            </div>
+            <div class="column">
+                <h3>Dia 5</h3>        
+                <p> Viernes: 14 km Trail mixto por Frías.</p>
+                <p>  - 2 Siete Colinas .</p>
+                <p>  - 3 subida al llorón por filo sur .</p>
+                <p>  - 5 km de calle (trabajando 150 metros ágiles 50 metros suaves).</p>
+            </div>
+            <div class="column">
+                <h3>Dia 6</h3>        
+                <p> Sábado: 20 km Cerro Ponderado - Cerro Vizcacheras - Quebrada de los Berros. </p>
+                <p>  - 2 km fuertes.</p>
+                <p>  - 3 km 4' agiles x 4' trekking fuerte.</p>
+                <p>  - 4 km con buena cadencia en subida.</p>
+                <p>  - 6 km bajada fuerte. </p>
+            </div>
+        </div>
+
+        <div class="small-paragraph-container">
+            <p> Método de recuperación: </p>
+            <p> - Bañera con hielo despues del entreno del sabado </p>
+            <p> - Botas despues del entreno Martes y viernes duchas frías de 30 segundos a 1 minutos post entrenos después del día 1 y 3 </p>
+        </div>
+      
+        <div id="column-container 2">
+        <canvas id="myChart-line-2"></canvas>
+        </div>              
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
