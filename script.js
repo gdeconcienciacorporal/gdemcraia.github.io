@@ -37,19 +37,19 @@ const configLine = {
   }
 };
 
-// Seleccione los contextos de los <canvas> y cree los gráficos
-const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), configLine);
-const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
-  type: 'line',
-  data: dataLine2,
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
+  // Seleccione los contextos de los <canvas> y cree los gráficos
+  const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), configLine);
+  const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
+    type: 'line',
+    data: dataLine2,
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  }
-});
+  });
 
 function actualizarDiasRestantes() {
   // Obtener el título que contiene la fecha objetivo
