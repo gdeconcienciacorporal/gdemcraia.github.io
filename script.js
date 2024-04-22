@@ -6,7 +6,7 @@ const dataLine1 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4','Dia 5', 'Dia 6'], // Etiquetas de los días
   datasets: [{
     label: 'Km recorridos en Semana 14',
-    data: [13, 21, 16, 14, 23, 25], // Datos de los km recorridos en cada día
+    data: [12, 17, 12, 17, 13, 19], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: false,
     tension: 0.1
@@ -17,7 +17,7 @@ const dataLine2 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4','Dia 5', 'Dia 6'], // Etiquetas de los días
   datasets: [{
     label: 'Km recorridos en Semana 15',
-    data: [14, 17, 17, 17, 15, 23], // Datos de los km recorridos en cada día
+    data: [12, 16, 12, 16, 12, 14], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
     fill: false,
     tension: 0.1

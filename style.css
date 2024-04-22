@@ -1,5 +1,10 @@
 /* styles.css */
-
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -46,9 +51,14 @@ body {
   flex: 1;
   padding: 1em; /* Utiliza em en lugar de píxeles */
   text-align: center;
-  border: 1px solid #dddddd;
+  border: 1px solid #bfc816;
 }
-
+.row{
+  flex: 1;
+  padding: 1em; /* Utiliza em en lugar de píxeles */
+  text-align: center;
+  border: 1px solid #e93a13;
+}
 .small-paragraph-container {
   background-color: #f4f4f4;
   padding: 2em; /* Utiliza em en lugar de píxeles */
